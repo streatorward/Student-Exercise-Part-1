@@ -1,13 +1,21 @@
+using System;
 using System.Collections.Generic;
 
-namespace StudentExercises {
-    public class Cohort {
+namespace StudentExercises
+{
+    public class Cohort
+    {
+        public string Name { get; set; }
+        public List<Student> Students { get; set; } 
+        public List<Instructor> Instructors { get; set; } 
 
-        public string CohortName { get; set; }
 
-        List<Student> Students = new List<Student> ();
+        // constructor
+        public Cohort (string name) 
+        {
+            Name = name;
+        }
 
-        List<Instructor> Instructors = new List<Instructor> ();
 
     }
 }
